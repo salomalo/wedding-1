@@ -1,0 +1,51 @@
+.notification {
+    border: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+/*    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+*/    padding: 10px 10px 10px 36px;
+    margin: 0;
+    background-position: 10px 11px !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    display: none;
+}
+.notification p {
+    margin: 0;
+    padding: 0;
+}
+.error {
+    background: #ffcece url('../../logincss/img/icons/16/cross-circle.png');
+    border-color: #df8f8f;
+    color: #665252;
+}
+.attention {
+    background: #fffbcc url('../../logincss/img/icons/16/exclamation.png');
+    border-color: #e6db55;
+    color: #666452;
+}
+.success {
+    background: #d5ffce url('../../logincss/img/icons/16/tick-circle.png');
+    border-color: #9adf8f;
+    color: #556652;
+}
+.information {
+    background: #dbe3ff url('../../logincss/img/icons/16/information.png');
+    border-color: #a2b4ee;
+    color: #585b66;
+}
+.close {
+    background-image: url('../../logincss/img/icons/16/cross-small-grey.png');
+    text-indent: -99999px;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 16px;
+    width: 16px;
+}

@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+}
+#wrapper{
+	width:1360px;
+	height:auto;
+}
+/*START HEADER*/
+#header{
+	height:130px;
+	width:inherit;
+	background-image:url('images/banner3.png') ;
+
+}
+div#header ul#nav{
+	list-style-type:none;
+	margin-top:90px;
+	width:80%;
+	float:right;
+	
+}
+div#header ul#nav .li_nav{
+	float:left;
+	width:20%;
+	line-height:32px;
+	overflow:hidden;
+	
+}
+div#header ul#nav li a{
+	text-align:center;
+	text-decoration:none;
+/*	font:Arial, Tahoma, "Times New Roman";*/
+	font-family:Georgia;
+	width:150px;
+	font-weight:100;
+	font-size:17px;
+	color:#FFFFFF;
+	display:block;
+}
+div#header ul#nav .li_nav a:hover{
+background:url(images/anhmenu_1.png) repeat-x;
+}
+
+div#header ul#nav .li_nav #sub_nav{
+display:none;
+overflow:hidden;
+z-index:1000;
+position:absolute;
+list-style-type:none;
+width:16%;
+
+
+ filter:alpha(opacity=60);
+-moz-opacity:0.6;
+-khtml-opacity: 0.6;
+opacity: 0.6;
+}
+div#header ul#nav .li_nav #sub_nav li{
+margin-top:-1px;
+line-height:32px;
+ width:100%;
+
+}
+div#header ul#nav .li_nav #sub_nav li a{
+background:url(images/nav_bar.gif) repeat-x;
+}
+div#header ul#nav .li_nav:hover #sub_nav{
+	display:block;
+}
+div#header ul#nav  #sub_nav li:hover a{
+	background:url(images/blackline.jpg) repeat-x;
+}
+#sub_nav li ul{
+	position:absolute;
+	top:0;
+	left:300px;
+	display:none;
+	width:100%;
+	z-index:2000;
+	overflow:hidden;
+}
+#sub_nav li:hover ul{
+	display:block;
+}
+
+/*----------HEADER--------------*/
+
+
+/*-------------START CONTENT-----------------*/
+#content{
+	height:auto;
+	width:inherit;
+	background:#666666;
+	position:fixed;
+	top:130px;
+	bottom:40px;
+	overflow:auto;
+}
+
+
+#album{
+	list-style-type:none;
+	color:#000000;
+	margin-top:-20px;
+	margin-left:30px;
+}
+
+#album_content_left{
+float:left;
+ width:84%;
+ height:100%;
+ min-height:500px;
+ border-right:#FFFFFF thin solid;
+
+}
+#album_content_right{
+	
+}
+.li_album{
+	float:left;
+	width:220px;
+	height:110px;
+	display:inline;
+	margin:50px 20px;
+}
+.div_album{
+	width:180px;
+	height:185px;
+	padding:6px;
+	text-align:center;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-moz-box-shadow: 3px 3px 4px #4c4c4c; /* Firefox */
+	-webkit-box-shadow: 3px 3px 4px #4c4c4c; /* Safari and Chrome */
+	margin:5px 5px 5px 5px;
+	/*background-color:#CCCCCC;*/
+}
+.div_album:hover{
+	-moz-box-shadow: 5px 5px 6px #4c4c4c; /* Firefox */
+	-webkit-box-shadow: 5px 5px 6px #4c4c4c; /* Safari and Chrome */
+	margin:0 10px 10px 0;
+
+}
+.li_album .anh{
+	width:170px;
+	height:110px;
+	overflow:hidden;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+
+}
+
+
+#PhanTrangNewList{
+	color: #333333;
+    font-family: Segoe UI;
+    font-size: 14px;
+	text-align:center;
+	padding-top:50px;
+	padding-bottom:10px;
+
+}
+
+#PhanTrangNewList a{
+	color: #333333;
+	text-decoration:none;
+	font-size: 14px;
+}
+#PhanTrangNewList a:hover{
+	color: black;
+	text-decoration:underline;
+}
+#ctl00_ContentPlaceHolder1_NewsList1_dlPaging_ctl00_lbPaging{
+	 border: 1px solid #9F9F9F;
+
+}
+/*-------------END CONTENT------------------*/
+#footer{
+	height:40px;
+	width:inherit;
+	background:url(images/footer.png) repeat-x;
+	position:absolute;
+	bottom:0;
+	padding-top:10px;
+	color:#FFFFFF;
+	z-index:1000;
+	text-align:left;
+	font-family:"Times New Roman", Times, serif;
+	font-weight:normal;
+	font-size:13px;
+}
+
+div#footer img{
+	border:none;
+}
